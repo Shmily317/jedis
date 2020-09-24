@@ -31,5 +31,7 @@ public class JedisTest {
         User user = new User(1001,"zhangsan");
         jedis.set("user", JSON.toJSONString(user));
         System.out.println(jedis.get("user"));
+
+
     }
 }
